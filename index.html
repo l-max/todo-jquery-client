@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Template • TodoMVC</title>
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+		<!-- CSS overrides - remove if you don't need it -->
+		<link rel="stylesheet" href="css/app.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<section class="login-wrapper">
+			<form id="login-form">
+				<h1>Sign in</h1>
+				<label for="email" class="form-label">Email: </label>
+				<input class="form-input" id="email" type="text" name="email">
+				<br>
+				<label for="password" class="form-label">Password: </label>
+				<input class="form-input" id="password" type="password" name="password"><br>
+				<button id="loginBtn" name="login" class="form-button">Log In</button>
+				 Or
+				<button id="register" class="form-button" rel="register-popup">Create New</button>
+			</form>
+		</section>
+		<div class="overlay_popup"></div>
+		<section class="popup" id="register-popup">
+			<div class="object">
+				<form id="register-form">
+					<h1>Registration</h1>
+					<label for="name" class="form-label">Name: </label>
+					<input class="form-input" type="text" name="name">
+					<label for="email" class="form-label">Email: </label>
+					<input class="form-input" type="text" name="email">
+					<br>
+					<label for="password" class="form-label">Password: </label>
+					<input class="form-input" type="password" name="password"><br>
+					<button id="create-user" name="submit" class="form-button">Create</button>
+					<button id="closeRegister" class="form-button">Close</button>
+				</form>
+			</div>
+		</section>
+
+		<div class="todoapp-wrapper hidden">
+			<section class="todoapp">
+				<header class="header">
+					<h1>todos</h1>
+					<input class="new-todo" placeholder="What needs to be done?" autofocus>
+				</header>
+				<section class="main">
+					<input id="toggle-all" class="toggle-all" type="checkbox">
+					<label for="toggle-all">Mark all as complete</label>
+					<ul class="todo-list">
+					</ul>
+				</section>
+				<footer class="footer">
+					<span class="todo-count"><strong>0</strong> item left</span>
+					<ul class="filters">
+						<li>
+							<a id="allBtn" class="selected" href="#/">All</a>
+						</li>
+						<li>
+							<a id="activeBtn" href="#/active">Active</a>
+						</li>
+						<li>
+							<a id="completedBtn" href="#/completed">Completed</a>
+						</li>
+					</ul>
+					<button class="clear-completed">Clear completed</button>
+				</footer>
+			</section>
+			<footer class="info">
+				<p>Double-click to edit a todo</p>
+				<p>Template by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
+				<!-- Change this out with your name and url ↓ -->
+				<p>Created by <a href="http://todomvc.com">you</a></p>
+				<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+			</footer>
+		</div>
+		<!-- Scripts here. Don't remove ↓ -->
+		<script src="node_modules/todomvc-common/base.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

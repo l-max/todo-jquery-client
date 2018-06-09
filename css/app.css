@@ -1,0 +1,62 @@
+.hidden {
+    display: none;
+}
+.form-input {
+    width: 250px;
+    height: 30px;
+}
+.form-label {
+    display: block;
+}
+.form-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.form-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+.form-button:hover {
+    background-color: #e7e7e7;
+}
+.login-wrapper {
+    width: 450px;
+    padding-left: 140px;
+}
+/** Popup **/
+.overlay_popup {
+    display:none;
+    position:fixed;
+    z-index: 999;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:#000;
+    opacity:0.5;
+}
+
+.popup {
+    display: none;
+    position: relative;
+    z-index: 1000;
+    margin: 5% 5% 0 15%;
+    width:450px;
+}
+.object{
+    width: 270px;
+    height: 270px;
+    background-color: #eee;
+    padding: 50px 70px;
+}
